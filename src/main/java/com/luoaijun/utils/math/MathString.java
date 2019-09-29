@@ -4,18 +4,18 @@ package com.luoaijun.utils.math;
  * 
  * TODO
  * 
- * @author 罗爱军
- * @date 2018年3月8日
- * @email aijun.luo@outlook.com
- * @package Coolibcom.luoaijun.tool.mathMathString.java
- * @describe TODO: 
- * @include :
- * @category : 工具类
+ *  罗爱军
+ *  2018年3月8日
+ *   aijun.luo@outlook.com
+ *  Coolibcom.luoaijun.tool.mathMathString.java
+ *  TODO:
+ *
+ * TODO : 工具类
  */
 public class MathString {
 
 	/**
-	 * @category 随机生成指定长度内的字符串
+	 * TODO 随机生成指定长度内的字符串
 	 */
 	public static String randomString(int number) {
 		String STR = "";

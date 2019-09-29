@@ -9,22 +9,22 @@ import java.util.Scanner;
 
 /**
  * TODO 封装了大部分的键盘读取操作
- *
- * @author 罗爱军
- * @date 2018年3月8日
- * @email aijun.luo@outlook.com
- * @package Coolibcom.luoaijun.tool.systemPrint.java
- * @describe TODO:
- * @include :
- * @category :
+ * <p>
+ * 罗爱军
+ * 2018年3月8日
+ * aijun.luo@outlook.com
+ * Coolibcom.luoaijun.tool.systemPrint.java
+ * TODO:
+ * <p>
+ * TODO :
  */
 public class Print {
     final static String CLASS_NAME = "java.lang.String";
     static Scanner scanner = new Scanner(System.in);
 
     /**
-     * @return int
-     * @function 键盘读取数字并处理非数字异常
+     * @return return int
+     * TODO 键盘读取数字并处理非数字异常
      */
     public static int newInt() {
         String string = scanner.next();
@@ -41,8 +41,8 @@ public class Print {
     }
 
     /**
-     * @return double
-     * @function 键盘读取数字并处理非数字异常
+     * @return return double
+     * TODO 键盘读取数字并处理非数字异常
      */
     public static double newDouble() {
         String string = scanner.next();
@@ -64,8 +64,8 @@ public class Print {
     }
 
     /**
-     * @return long
-     * @function 键盘读取数字并处理非数字异常
+     * @return return long
+     * TODO 键盘读取数字并处理非数字异常
      */
     public static long newLong() {
         String string = scanner.next();
@@ -82,8 +82,8 @@ public class Print {
     }
 
     /**
-     * @return Float
-     * @function 键盘读取数字并处理非数字异常
+     * @return return Float
+     * TODO 键盘读取数字并处理非数字异常
      */
     public static float newFloat() {
         float i = 0;
@@ -99,15 +99,14 @@ public class Print {
     }
 
     /**
-     * @function 读取string
+     * TODO 读取string
      */
     public static String newString() {
         return scanner.next();
     }
 
     /**
-     * @throws IOException
-     * @category 通过转换流 获取输入的字符串
+     * @throws IOException TODO 通过转换流 获取输入的字符串
      */
     public static String newStringIuputStream() throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -118,17 +117,16 @@ public class Print {
     }
 
     /**
-     * @return
-     * @throws IOException
-     * @category 通过转换流获取输入的字符
+     * @return return
+     * @throws IOException TODO 通过转换流获取输入的字符
      */
     public static char newCharInputStream() throws IOException {
         return Print.newStringIuputStream().charAt(0);
     }
 
     /**
-     * @return
-     * @category 读取字符
+     * @return return
+     * TODO 读取字符
      */
     public static char newChar() {
         // TODO Auto-generated method stub
@@ -136,7 +134,7 @@ public class Print {
     }
 
     /**
-     * @return boolean
+     * @return return boolean
      */
     public static boolean newBoolean() {
         return scanner.nextBoolean();
@@ -144,8 +142,8 @@ public class Print {
 
     /**
      * @param t
-     * @return
-     * @category 根据 T 来获取输入
+     * @return return
+     * TODO 根据 T 来获取输入
      */
     @SuppressWarnings("unchecked")
     public static <T> T newT(T t) {

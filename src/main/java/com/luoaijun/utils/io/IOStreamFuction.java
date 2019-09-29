@@ -18,21 +18,21 @@ import java.util.List;
 
 /**
  * 
- * @author 罗爱军
- * @date 2018-3-6
- * @email aijun.luo@outlook.com
- * @package Coolibcom.luoaijun.tool.ioIOStreamFuction.java
- * @describe TODO:
- * @category BufferedReader BufferedWriter FileReader FileWriter FileInputStream
+ *  罗爱军
+ *  2018-3-6
+ *   aijun.luo@outlook.com
+ *  Coolibcom.luoaijun.tool.ioIOStreamFuction.java
+ *  TODO:
+ * TODO BufferedReader BufferedWriter FileReader FileWriter FileInputStream
  *           FileOutputStream BufferedInputStream BufferedOutputStream
  *           ObjectInputStream ObjectOutputStream
  */
 public class IOStreamFuction {
 
 	/**
-	 * @category 创建一个文件
+	 * TODO 创建一个文件
 	 * @param str
-	 * @return
+	 * @return  return
 	 * @throws IOException
 	 */
 	public static File createFile(String str) throws IOException {
@@ -45,10 +45,10 @@ public class IOStreamFuction {
 	}
 
 	/**
-	 * @category 读取文件中第index个字符
+	 * TODO 读取文件中第index个字符
 	 * @param file
 	 * @param index
-	 * @return
+	 * @return  return
 	 * @throws IOException
 	 */
 	public static char readAChar(File file, int index) throws IOException {
@@ -65,7 +65,7 @@ public class IOStreamFuction {
 	}
 
 	/**
-	 * @category 递归打印文件和目录名
+	 * TODO 递归打印文件和目录名
 	 * @param file
 	 */
 	public static void list(File file) {
@@ -80,7 +80,7 @@ public class IOStreamFuction {
 	}
 
 	/**
-	 * @category 递归打印含str后缀的文件和目录名
+	 * TODO 递归打印含str后缀的文件和目录名
 	 * @param file
 	 * @param str
 	 */
@@ -99,9 +99,9 @@ public class IOStreamFuction {
 	}
 
 	/**
-	 * @category 文件复制
+	 * TODO 文件复制
 	 * @param file
-	 * @return
+	 * @return  return
 	 * @throws IOException
 	 */
 	@SuppressWarnings("resource")
@@ -122,10 +122,10 @@ public class IOStreamFuction {
 	}
 
 	/**
-	 * @category 获取文件中某行的字符串
+	 * TODO 获取文件中某行的字符串
 	 * @param fileReader
 	 * @param index
-	 * @return Sting
+	 * @return  return Sting
 	 * @throws IOException
 	 */
 	public static String readALine(FileReader fileReader, int index)
@@ -142,7 +142,7 @@ public class IOStreamFuction {
 	}
 
 	/**
-	 * @category 打印文件中的内容
+	 * TODO 打印文件中的内容
 	 * @param file
 	 * @throws IOException
 	 */
@@ -159,10 +159,10 @@ public class IOStreamFuction {
 	}
 
 	/**
-	 * @category 写入文件 ，文件序列化
+	 * TODO 写入文件 ，文件序列化
 	 * @param file
 	 * @param str
-	 * @return
+	 * @return  return
 	 * @throws IOException
 	 */
 	@SuppressWarnings("resource")
@@ -177,10 +177,10 @@ public class IOStreamFuction {
 	}
 
 	/**
-	 * @category 对象序列化
-	 * @param file
-	 * @param t
-	 * @return
+	 * TODO 对象序列化
+	 * @param file file
+	 * @param t t
+	 * @return  return
 	 * @throws IOException
 	 */
 	@SuppressWarnings("resource")
@@ -212,7 +212,7 @@ public class IOStreamFuction {
 	/**
 	 * 
 	 * @param is
-	 * @return
+	 * @return  return
 	 * @throws Exception
 	 */
 	public static byte[] streamToByteArray(InputStream is) throws Exception {
@@ -235,7 +235,7 @@ public class IOStreamFuction {
 	/**
 	 * 
 	 * @param is
-	 * @return
+	 * @return  return
 	 * @throws Exception
 	 */
 

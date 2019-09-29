@@ -6,22 +6,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-/**
- * TODO
- *
- * @author 罗爱军
- * @date 2018年3月8日
- * @email aijun.luo@outlook.com
- * @package Coolibcom.luoaijun.tool.netStreamUtils.java
- * @describe TODO:
- * @include :
- * @category :Create By Teacher LiYuTing
- */
+
 public class StreamUtils {
 
     /**
      * @param is
-     * @return
+     * @return  return
      * @throws Exception
      */
     public static byte[] streamToByteArray(InputStream is) throws Exception {
@@ -42,7 +32,7 @@ public class StreamUtils {
 
     /**
      * @param is
-     * @return
+     * @return  return
      * @throws Exception
      */
     public static String streamToString(InputStream is) throws Exception {

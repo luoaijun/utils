@@ -5,29 +5,29 @@ import java.lang.reflect.Method;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import com.luoaijun.utils.reflect.ReflectTool;
+import com.luoaijun.utils.reflect.ReflectUtils;
 
 /**
  * TODO
- *
- * @author 罗爱军
- * @date 2018年3月8日
- * @email aijun.luo@outlook.com
- * @package Coolibcom.luoaijun.tool.threadThreadTool.java
- * @describe TODO:
- * @include :
- * @category :线程工具类
+ * <p>
+ * 罗爱军
+ * 2018年3月8日
+ * aijun.luo@outlook.com
+ * Coolibcom.luoaijun.tool.threadThreadTool.java
+ * TODO:
+ * <p>
+ * TODO :线程工具类
  */
-public class ThreadTool {
+public class ThreadUtils {
     /**
      * TODO 单线程池 -根据传入的对象，创建一个线程，该线程内执行对象中的给定方法
      *
      * @param t         ：获取的类对象
      * @param methodStr ：需要运行的方法名
      * @param para      ：参数类型 object ，传参
+     * @return return：返回一个Thread
      * @throws Exception
      * @throws Throwable
-     * @return：返回一个Thread
      */
     public static <T, E> Thread getAThread(final T t, final String methodStr, final Object... para)
             throws Exception, Throwable {
@@ -39,7 +39,7 @@ public class ThreadTool {
                     final Method method;
                     try {
                         method = classT.getDeclaredMethod(methodStr,
-                                ReflectTool.getClassType(classT, methodStr));
+                                ReflectUtils.getClassType(classT, methodStr));
                         method.setAccessible(true);
                         // TODO Auto-generated method stub
                         method.invoke(t, para);
@@ -71,24 +71,24 @@ public class ThreadTool {
     }
 
     /**
+     * TODO 多线程池
+     *
      * @param t         获取的类对象
      * @param methodStr 需要运行的方法名
      * @param index     线程数量
      * @param para
      * @param <T>
-     * @return
+     * @return return
      * @throws Exception
      * @throws Throwable
      */
     public static <T> Thread[] getIndexThread(final T t, final String methodStr, int index, final Object... para)
             throws Exception, Throwable {
-
         Thread[] threads = new Thread[index];
         for (int i = 0; i < index; i++) {
             threads[i] = getAThread(t, methodStr, para);
         }
         return threads;
-
     }
 
     /**
@@ -96,10 +96,9 @@ public class ThreadTool {
      * @param methodStr
      * @param index
      * @param para
-     * @return ExecutorService
+     * @return return ExecutorService
      * @throws Exception
-     * @throws Throwable
-     * @category 创建一个线程池
+     * @throws Throwable TODO 创建一个线程池
      */
     public static <T> ExecutorService getThreadPool(final T t, final String methodStr, int index, final Object... para)
             throws Exception, Throwable {
@@ -111,8 +110,7 @@ public class ThreadTool {
     }
 
     /**
-     * @param thread
-     * @category 销毁线程
+     * @param thread TODO 销毁线程
      */
     @SuppressWarnings("deprecation")
     public static void killThreads(Thread[] thread) {
@@ -129,8 +127,7 @@ public class ThreadTool {
     }
 
     /**
-     * @param threads
-     * @category 启动所有的线程
+     * @param threads TODO 启动所有的线程
      */
     public void startAll(Thread... threads) {
         // TODO Auto-generated method stub

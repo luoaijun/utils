@@ -10,20 +10,20 @@ import java.util.List;
  * 
  * TODO
  * 
- * @author 罗爱军
- * @date 2018年3月8日
- * @email aijun.luo@outlook.com
- * @package Coolibcom.luoaijun.tool.ioIOByteFunction.java
- * @describe TODO:
- * @include :
- * @category :
+ *  罗爱军
+ *  2018年3月8日
+ *   aijun.luo@outlook.com
+ *  Coolibcom.luoaijun.tool.ioIOByteFunction.java
+ *  TODO:
+ *
+ * TODO :
  */
 public class IOByteFunction {
 	/**
-	 * @category 获取文件中某行的字符串
+	 * TODO 获取文件中某行的字符串
 	 * @param fileReader
 	 * @param index
-	 * @return Sting
+	 * @return  return Sting
 	 * @throws IOException
 	 */
 	public static String readALine(FileReader fileReader, int index) throws IOException {

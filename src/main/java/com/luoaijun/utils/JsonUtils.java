@@ -9,17 +9,17 @@ import java.net.UnknownHostException;
 import java.util.*;
 
 /**
- * @dec
- * @Version 1.0
- * @Author aijun.luo
- * @Date 10:12
+ *
+ *  1.0
+ *  aijun.luo
+ *  10:12
  */
 public class JsonUtils {
     /**
      * TODO
      *
      * @param json
-     * @return
+     * @return  return
      */
     public static LinkedHashMap<String, Object> jsonConvertMap(JSONObject json) {
         LinkedHashMap<String, Object> map = new LinkedHashMap<String, Object>();
@@ -66,10 +66,10 @@ public class JsonUtils {
     }
 
     /**
-     * TODO 将json数据转换为list<map>
+     * TODO 将json数据转换为List
      *
      * @param json
-     * @return
+     * @return  return
      */
     public static List<LinkedHashMap> convertJsonArrayMapToList(String json) {
         JSONArray jsonArray = JSON.parseArray(json);
@@ -83,10 +83,10 @@ public class JsonUtils {
     }
 
     /**
-     * TODO 将json转换为map<map>
+     * TODO 将json转换为map
      *
      * @param json
-     * @return
+     * @return  return
      */
     public static LinkedHashMap convertJsonObjToListMap(String json) {
         JSONObject jsonObject = JSON.parseObject(json);
@@ -103,7 +103,7 @@ public class JsonUtils {
      * TODO list to json
      *
      * @param map
-     * @return
+     * @return  return
      */
     public static String getJson(List map) {
         Iterator iterator = map.iterator();
@@ -118,16 +118,17 @@ public class JsonUtils {
      * TODO map to json
      *
      * @param map
-     * @return
+     * @return  return
      */
     public static String getMapToJson(Map map) {
         return JSON.toJSONString(map);
     }
 
+
     /**
-     * TODO 从mongodb 获取数据并转换为List<Map>
+     * TODO 从mongodb 获取数据并转换为List
      *
-     * @return
+     * @return  return
      */
     public static List<LinkedHashMap> getMongoData(String name, String collection, String port, int host, String mongoQuery) throws UnknownHostException {
 

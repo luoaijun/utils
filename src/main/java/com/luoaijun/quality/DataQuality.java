@@ -1,4 +1,4 @@
-package com.luoaijun.utils.quality;
+package com.luoaijun.quality;
 
 import com.luoaijun.utils.Utils;
 import org.apache.log4j.Logger;
@@ -12,10 +12,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @dec
- * @Version 1.0
- * @Author aijun.luo
- * @Date 2019.7.22
+ *
+ *  1.0
+ *  aijun.luo
+ *  2019.7.22
  */
 
 public class DataQuality {
@@ -25,7 +25,7 @@ public class DataQuality {
      * TODO 提取字符串中的数值
      *
      * @param str
-     * @return
+     * @return  return
      */
     public static int getNumber(String str) {
         String regEx = "[^0-9]";
@@ -40,7 +40,7 @@ public class DataQuality {
      *
      * @param len
      * @param size
-     * @return
+     * @return  return
      */
     public static boolean isLength(int len, int size) {
         return len <= size;
@@ -52,7 +52,7 @@ public class DataQuality {
      * @param keyValue
      * @param data
      * @param type
-     * @return
+     * @return  return
      */
     public static boolean isType(String keyValue, String data, String type, int length) {
         data = data.toLowerCase();
@@ -143,7 +143,7 @@ public class DataQuality {
      * TODO 判断是否为合法日期格式
      *
      * @param str
-     * @return
+     * @return  return
      */
     public static boolean isValidDate(String str) {
         boolean convertSuccess = true;
@@ -173,7 +173,7 @@ public class DataQuality {
      * 已废弃
      *
      * @param phone
-     * @return
+     * @return  return
      */
     public static boolean isPhone(String phone) {
         String regex = "^[1][3,4,5,7,8][0-9]{9}$";
@@ -190,8 +190,8 @@ public class DataQuality {
      * TODO 判断是否为邮箱
      * 已废弃
      *
-     * @param email
-     * @return
+     * @param email 邮件
+     * @return  return boolean
      */
     public static boolean isEmail(String email) {
         if (null == email || "".equals(email)) {
@@ -213,7 +213,7 @@ public class DataQuality {
      * @param keyValue
      * @param regular  正则表达式
      * @param data     校验的数据
-     * @return
+     * @return  return
      */
     public static boolean isRegular(String keyValue, String regular, String data) {
         if (null == data || "".equals(data)) {
@@ -234,10 +234,10 @@ public class DataQuality {
     /**
      * TODO 判断表结构是否一致
      *
-     * @param keyValue
-     * @param mongoList
-     * @param structList
-     * @return
+     * @param keyValue  keyValue
+     * @param mongoList mongoList
+     * @param structList structList
+     * @return  return return
      */
 
     public static Boolean structureCheck(String keyValue, Map mongoList, Map structList) {

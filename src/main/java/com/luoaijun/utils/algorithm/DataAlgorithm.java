@@ -7,10 +7,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @dec
- * @Version 1.0
- * @Author aijun.luo
- * @Date 15:30
+ * 1.0
+ * aijun.luo
+ * 15:30
  */
 public class DataAlgorithm {
 
@@ -21,7 +20,7 @@ public class DataAlgorithm {
      * 高效判断重复数据，千万数据毫秒级响应
      *
      * @param data :返回数据结构为数据所在list的索引值和数据值
-     * @return
+     * @return  return return
      */
     public static Map noRepetitionDataCheck(List data) {
         //....

@@ -9,15 +9,15 @@ import com.luoaijun.iterface.PrintInter;
  * 
  * TODO set工具类
  * 
- * @author 罗爱军
- * @date 2018年3月8日
- * @email aijun.luo@outlook.com
- * @package Coolibcom.luoaijun.tool.collectionSetTool.java
- * @describe TODO:
- * @include :
- * @category :
+ *  罗爱军
+ *  2018年3月8日
+ *   aijun.luo@outlook.com
+ *  Coolibcom.luoaijun.tool.collectionSetTool.java
+ *  TODO:
+ *
+ * TODO :
  */
-public class SetTool implements PrintInter {
+public class SetUtils implements PrintInter {
 
 	@Override
 	public <T> Object print(T t) {

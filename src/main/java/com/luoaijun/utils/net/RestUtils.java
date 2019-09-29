@@ -1,8 +1,8 @@
 package com.luoaijun.utils.net; /**
- * @dec
- * @Version 1.0
- * @Author aijun.luo
- * @Date 14:43
+ *
+ *  1.0
+ *  aijun.luo
+ *  14:43
  */
 
 import org.apache.commons.httpclient.HttpClient;
@@ -25,7 +25,7 @@ public class RestUtils {
      *
      * @param url
      * @param param
-     * @return
+     * @return  return
      */
     public static String getMethodByParam(String url, String param) {
         return getMethod(url + param);
@@ -35,7 +35,7 @@ public class RestUtils {
      * TODO get 数据接口
      *
      * @param url
-     * @return
+     * @return  return
      */
     public static String getMethod(String url) {
         URL restURL = null;
@@ -73,7 +73,7 @@ public class RestUtils {
      *
      * @param url
      * @param query
-     * @return
+     * @return  return
      */
     public static String postMethod(String url, String query) {
 
@@ -115,7 +115,7 @@ public class RestUtils {
      *
      * @param parm
      * @param Url
-     * @return
+     * @return  return
      */
     public static String putMethod(String parm, String Url) {
         try {
@@ -154,7 +154,7 @@ public class RestUtils {
      * TODO delete
      *
      * @param url
-     * @return
+     * @return  return
      */
     public static String deleteMethod(String url) {
         HttpClient httpClient = new HttpClient();

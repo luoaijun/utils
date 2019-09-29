@@ -1,26 +1,25 @@
 package com.luoaijun.utils.collection;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
+import java.lang.reflect.Array;
+import java.util.*;
 
 /**
  * TODO list 工具类
+ * <p>
+ * 罗爱军
+ * 2018年3月8日
+ * aijun.luo@outlook.com
  *
- * @author 罗爱军
- * @date 2018年3月8日
- * @email aijun.luo@outlook.com
- * @include :
- * @category :
+ *
+ * TODO :
  */
-public class ListTool {
+public class ListUtils {
 
 
     /**
      * @param list
-     * @return null
-     * @category 打印list类内容
+     * @return  return null
+     * TODO 打印list类内容
      */
     @SuppressWarnings("rawtypes")
     public static <T> Object printLn(List list) {
@@ -31,5 +30,15 @@ public class ListTool {
 
         }
         return builder.toString();
+    }
+
+    /**
+     * TODO 返回一个list
+     *
+     * @param object
+     * @return  return
+     */
+    public static List createList(Object... object) {
+        return Arrays.asList(object);
     }
 }

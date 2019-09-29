@@ -8,10 +8,9 @@ import org.apache.log4j.Logger;
 import java.util.*;
 
 /**
- * @dec
- * @Version 1.0
- * @Author aijun.luo
- * @Date 11:22
+ * 1.0
+ * aijun.luo
+ * 11:22
  */
 public class MapDataUtils {
     public static Logger logger = Logger.getLogger(MapDataUtils.class);
@@ -34,10 +33,10 @@ public class MapDataUtils {
     /**
      * TODO 通過tagValue從list中獲取keyValue
      *
-     * @param data
-     * @param key
-     * @param tagValue
-     * @return
+     * @param data     data
+     * @param key      key
+     * @param tagValue tagValue
+     * @return  return  return return return
      */
     public static String getKeyValueByTagValueFromList(List<LinkedHashMap> data, String key, String tagValue) {
         Iterator iterator = data.iterator();
@@ -54,7 +53,7 @@ public class MapDataUtils {
      * @param json 待解析的json串
      * @param name 标记
      * @param key  待提取的字段
-     * @return
+     * @return  return  return return
      */
     public static Map getDataFromArraysByKey(List json, String name, String key) {
         List list = json;
@@ -73,7 +72,7 @@ public class MapDataUtils {
      *
      * @param json
      * @param key
-     * @return
+     * @return  return  return
      */
     public static Map getDataFromObjectsByKey(Map json, String key) {
         Map list = json;
@@ -89,7 +88,7 @@ public class MapDataUtils {
      *
      * @param json
      * @param key
-     * @return
+     * @return  return  return
      */
     public static Map getDataFromArrayByKey(String json, String key, String tag) {
         List<LinkedHashMap> list = new ArrayList();
@@ -108,7 +107,7 @@ public class MapDataUtils {
      *
      * @param json
      * @param key
-     * @return
+     * @return  return  return
      */
     public static String getDataStringFromArrayByKey(String json, String key) {
         List<LinkedHashMap> list = new ArrayList();
@@ -121,7 +120,7 @@ public class MapDataUtils {
      *
      * @param data
      * @param key
-     * @return
+     * @return  return  return
      */
     public static List getDataStringFromArraysByKey(List data, String key) {
         List list = data;
@@ -138,7 +137,7 @@ public class MapDataUtils {
      *
      * @param json
      * @param key
-     * @return
+     * @return  return  return
      */
     public static String getDataFromObjectByKey(String json, String key) {
         Map<Object, LinkedHashMap> map = new LinkedHashMap();
@@ -152,7 +151,7 @@ public class MapDataUtils {
      *
      * @param struct
      * @param key
-     * @return
+     * @return  return  return
      */
     public static String getDataByKey(Map struct, String key) {
         return (String) struct.get(key);
@@ -163,7 +162,7 @@ public class MapDataUtils {
      *
      * @param map1
      * @param map2
-     * @return
+     * @return  return  return
      */
     public static Map merge(Map map1, Map map2) {
         Map result = new LinkedHashMap();
@@ -185,7 +184,7 @@ public class MapDataUtils {
      * @param key      关键字
      * @param tag      辨别标记
      * @param tagValue 辨别标记的值
-     * @return
+     * @return  return  return
      */
     public static String getKeyByTagValue(Map struct, String key, String tag, String tagValue) {
         String keyValue = null;
@@ -204,7 +203,7 @@ public class MapDataUtils {
      * @param key
      * @param tag
      * @param tagValue
-     * @return
+     * @return  return  return
      */
     public static Map getKeyByTagValueFromArray(List<LinkedHashMap> json, String key, String tag, String tagValue) {
         String data = null;
@@ -229,11 +228,11 @@ public class MapDataUtils {
      * @param key
      * @param tag
      * @param tagValue
-     * @return
+     * @return  return  return
      */
     public static Map getKeyByTagValueFromObject(String json, String key, String tag, String tagValue) {
         Map[] map = new LinkedHashMap[3];
-        map[0] = new LinkedHashMap();//存放json 转Map<Map>的值
+        map[0] = new LinkedHashMap();//存放json 转map的值
         map[1] = new LinkedHashMap();//存放Map<map1>中的map1
         map[2] = new LinkedHashMap();//存放返回结果
         map[0] = JsonUtils.convertJsonObjToListMap(json);
@@ -253,11 +252,11 @@ public class MapDataUtils {
      * @param key
      * @param tag
      * @param tagValue
-     * @return
+     * @return  return  return
      */
     public static String getKeyStringByTagValueFromObject(String json, String key, String tag, String tagValue) {
         Map[] map = new LinkedHashMap[2];
-        map[0] = new LinkedHashMap();//存放json 转Map<Map>的值
+        map[0] = new LinkedHashMap();//存放json 转map的值
         map[1] = new LinkedHashMap();//存放Map<map1>中的map1
         map[0] = JsonUtils.convertJsonObjToListMap(json);
         String result = "";
@@ -275,7 +274,7 @@ public class MapDataUtils {
      *
      * @param map
      * @param keyValue
-     * @return
+     * @return  return  return
      */
     public static Map removeDataByKeyValue(Map map, Object keyValue) {
         List tag = new ArrayList();
@@ -300,7 +299,7 @@ public class MapDataUtils {
      *
      * @param data
      * @param list
-     * @return
+     * @return  return  return
      */
     public static Boolean exist(String data, String key, List<LinkedHashMap> list) {
         Iterator iterator = list.iterator();
@@ -352,9 +351,9 @@ public class MapDataUtils {
     /**
      * TODO 获取data2中存在但是data1中不存在的数据
      *
-     * @param data1
-     * @param data2
-     * @return
+     * @param data1 data1
+     * @param data2 data2
+     * @return  return  return
      */
     public static List<String> getUnJoinData(List<String> data1, List<String> data2) {
         List<String> result = new ArrayList();
@@ -373,9 +372,9 @@ public class MapDataUtils {
     /**
      * TODO 判断Map中有且只有一个相同的value
      *
-     * @param map
-     * @param value
-     * @return
+     * @param map map
+     * @param value value
+     * @return  return  return
      */
     public static Boolean valueCheck(Map map, String value) {
         int index = 0;
@@ -397,10 +396,10 @@ public class MapDataUtils {
     /**
      * TODO 根据key和keyValue从list中获取对应的map数据
      *
-     * @param list
-     * @param key
-     * @param keyValue
-     * @return
+     * @param list list
+     * @param key key
+     * @param keyValue keyValue
+     * @return  return  return
      */
     public static Map getMapFromListByKey(List<LinkedHashMap> list, String key, String keyValue) {
         Iterator iterator = list.iterator();
@@ -416,9 +415,9 @@ public class MapDataUtils {
     /**
      * TODO 根据key获取map中value的list数据集
      *
-     * @param list
-     * @param key
-     * @return
+     * @param list list
+     * @param key key
+     * @return  return  return
      */
     public static List mapToList(List<LinkedHashMap> list, String key) {
         List lists = new ArrayList();
@@ -433,9 +432,9 @@ public class MapDataUtils {
     /**
      * TODO list数据转换成带分隔符的字符串
      *
-     * @param list
-     * @param delimit
-     * @return
+     * @param list list
+     * @param delimit delimit
+     * @return  return  return
      */
     public static String listToStringByDelimit(List list, String delimit) {
         Iterator iterator = list.iterator();
@@ -449,9 +448,9 @@ public class MapDataUtils {
     /**
      * TODO list数据转换成带分隔符的字符串
      *
-     * @param list
-     * @param delimit
-     * @return
+     * @param list list
+     * @param delimit delimit
+     * @return  return  return
      */
     public static String listToStringMD5ByDelimit(List list, String delimit) {
         Iterator iterator = list.iterator();
@@ -466,9 +465,9 @@ public class MapDataUtils {
     /**
      * TODO 如果map1中含有与map2相同的key，则两个map中该key的value值做为新的键值对加入map1中
      *
-     * @param map1
-     * @param map2
-     * @return
+     * @param map1 map1
+     * @param map2 map2
+     * @return  return  return
      */
     public static Map MapMerge(Map map1, Map map2) {
         Map temp = new LinkedHashMap();
@@ -488,7 +487,7 @@ public class MapDataUtils {
     /**
      * @param data
      * @param keyValue
-     * @return
+     * @return  return  return
      */
     public static boolean removeDataFromListByKeyValue(List data, Map keyValue) {
         Iterator set = keyValue.keySet().iterator();
@@ -505,8 +504,8 @@ public class MapDataUtils {
     /**
      * TODO 根据keyList的key值移除list<Map>中map的字段
      *
-     * @param data
-     * @param key
+     * @param data  data
+     * @param key  key
      */
     public static void removeDataFromListByKeyList(List<Map> data, List key) {
         Iterator<Map> iterator = data.iterator();
@@ -522,9 +521,9 @@ public class MapDataUtils {
     /**
      * TODO 根据value获取key
      *
-     * @param data
-     * @param value
-     * @return
+     * @param data data
+     * @param value value
+     * @return  return  return
      */
     public static Object getKeyByValue(Map data, Object value) {
         Iterator<Map.Entry<String, String>> iterator = data.entrySet().iterator();
@@ -539,8 +538,8 @@ public class MapDataUtils {
     /**
      * TODO map 反转
      *
-     * @param map
-     * @return
+     * @param map map
+     * @return  return  return
      */
     public static Map reversal(Map map) {
         Iterator<Map.Entry> iterator = map.entrySet().iterator();

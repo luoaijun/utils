@@ -10,19 +10,19 @@ import com.luoaijun.iterface.PrintInter;
 /**
   * 
   * TODO map 工具类
-  * @author 罗爱军
-  * @date 2018年3月8日
-  * @email aijun.luo@outlook.com
-  * @package Coolibcom.luoaijun.tool.collectionMapTool.java
-  * @describe TODO:
-  * @include :
-  * @category :
+  *  罗爱军
+  *  2018年3月8日
+  *   aijun.luo@outlook.com
+  *  Coolibcom.luoaijun.tool.collectionMapTool.java
+  *  TODO:
+  *
+  * TODO :
   */
-public class MapTool implements PrintInter {
+public class MapUtils implements PrintInter {
 
 	/**
 	 * 
-	 * @category 迭代遍历获取map中的字符串
+	 * TODO 迭代遍历获取map中的字符串
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public <T> Object print(T t) {

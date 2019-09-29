@@ -5,22 +5,12 @@ import org.apache.log4j.Logger;
 import java.util.Timer;
 import java.util.TimerTask;
 
-/**
- * TODO 工具类
- *
- * @author 罗爱军
- * @date 2018年3月8日
- * @email aijun.luo@outlook.com
- * @package Coolibcom.luoaijun.tool.arrayTool.java
- * @describe TODO:
- * @include :
- * @category :
- */
+
 public class arrayUtils {
     public static Logger logger = Logger.getLogger(arrayUtils.class);
 
     /**
-     * @category 数组清零操作
+     * TODO 数组清零操作
      */
     public static int[] clear(int[] temp) {
         int count = 0;
@@ -52,7 +42,7 @@ public class arrayUtils {
     }
 
     /**
-     * @category 数组清零操作
+     * TODO 数组清零操作
      */
     public static String[] clearString(String[] temp) {
 
@@ -86,7 +76,7 @@ public class arrayUtils {
 
     /**
      * @param number
-     * @category 延时函数 毫秒
+     * TODO 延时函数 毫秒
      */
     public static void delayWith(int number, final String str) {
 
@@ -101,7 +91,7 @@ public class arrayUtils {
 
     /**
      * @param number
-     * @category 延时函数 秒
+     * TODO 延时函数 秒
      */
     public static void delay_s(int number) {
         try {
@@ -118,7 +108,7 @@ public class arrayUtils {
 
     /**
      * @param number
-     * @category 延时函数 毫秒
+     * TODO 延时函数 毫秒
      */
     public static void delay_ms(int number) {
         try {

@@ -11,9 +11,9 @@ import java.util.Properties;
 public class SqlDriver {
 
 	/**
-	 * @category 获取一个通用的数据库连接
+	 * TODO 获取一个通用的数据库连接
 	 * @param str
-	 * @return
+	 * @return  return
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 * @throws ClassNotFoundException
@@ -57,9 +57,9 @@ public class SqlDriver {
 	}
 
 	/**
-	 * @category 获取一个通用的数据库连接
+	 * TODO 获取一个通用的数据库连接
 	 * @param str
-	 * @return
+	 * @return  return
 	 * @throws IOException
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException

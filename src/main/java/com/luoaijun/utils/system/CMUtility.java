@@ -12,7 +12,7 @@ public class CMUtility {
 	/**
 	 * 功能：读取键盘输入的一个菜单选项，值：1——5的范围
 	 * 
-	 * @return 1——5
+	 * @return  return 1——5
 	 */
 	public static char readMenuSelection() {
 		char c;
@@ -30,7 +30,7 @@ public class CMUtility {
 	/**
 	 * 功能：读取键盘输入的一个字符
 	 * 
-	 * @return 一个字符
+	 * @return  return 一个字符
 	 */
 	public static char readChar() {
 		String str = readKeyBoard(1, false);// 就是一个字符
@@ -42,7 +42,7 @@ public class CMUtility {
 	 * 
 	 * @param defaultValue
 	 *            指定的默认值
-	 * @return 默认值或输入的字符
+	 * @return  return 默认值或输入的字符
 	 */
 
 	public static char readChar(char defaultValue) {
@@ -53,7 +53,7 @@ public class CMUtility {
 	/**
 	 * 功能：读取键盘输入的整型，长度小于2位
 	 * 
-	 * @return 整数
+	 * @return  return 整数
 	 */
 	public static int readInt() {
 		int n;
@@ -74,7 +74,7 @@ public class CMUtility {
 	 * 
 	 * @param defaultValue
 	 *            指定的默认值
-	 * @return 整数或默认值
+	 * @return  return 整数或默认值
 	 */
 	public static int readInt(int defaultValue) {
 		int n;
@@ -99,7 +99,7 @@ public class CMUtility {
 	 * 
 	 * @param limit
 	 *            限制的长度
-	 * @return 指定长度的字符串
+	 * @return  return 指定长度的字符串
 	 */
 
 	public static String readString(int limit) {
@@ -113,7 +113,7 @@ public class CMUtility {
 	 *            限制的长度
 	 * @param defaultValue
 	 *            指定的默认值
-	 * @return 指定长度的字符串
+	 * @return  return 指定长度的字符串
 	 */
 
 	public static String readString(int limit, String defaultValue) {
@@ -124,7 +124,7 @@ public class CMUtility {
 	/**
 	 * 功能：读取键盘输入的确认选项，y或n
 	 * 
-	 * @return Y或N
+	 * @return  return Y或N
 	 */
 	public static char readConfirmSelection() {
 		char c;
