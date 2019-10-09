@@ -97,14 +97,13 @@ object MysqlUtils {
       val catalogName = cupe.asInstanceOf[mutable.HashMap[Any, Any]].get("categories").asInstanceOf[Some[Any]].value
       val content = cupe.asInstanceOf[mutable.HashMap[Any, Any]].get("content").asInstanceOf[Some[Any]].value
       val path = "C:\\work\\CDES\\code\\test\\chinese_text_classification\\train_corpus\\"
-      val dir: File = (path+catalogName).toString
+      val dir: File = (path + catalogName).toString
         .toFile
         .createIfNotExists(true)
-      val writer: File = ((path+catalogName) + "\\" + Utils.randomHashcode() + ".txt")
+      val writer: File = ((path + catalogName) + "\\" + Utils.randomHashcode() + ".txt")
         .toFile
         .createIfNotExists()
         .write(content.toString)
-
     }
   }
 }
