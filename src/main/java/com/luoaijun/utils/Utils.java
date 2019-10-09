@@ -1,8 +1,7 @@
 package com.luoaijun.utils; /**
- *
- *  1.0
- *  aijun.luo
- *  2019.8.20 17:08
+ * 1.0
+ * aijun.luo
+ * 2019.8.20 17:08
  */
 
 import org.apache.commons.codec.digest.DigestUtils;
@@ -19,7 +18,7 @@ public class Utils {
      *
      * @param text 明文
      * @param key  密钥
-     * @return  return 密文
+     * @return return 密文
      */
     public static String md5(String text, String key) throws Exception {
         // 加密后的字符串
@@ -86,7 +85,7 @@ public class Utils {
      * TODO 判断是否为空
      *
      * @param obj
-     * @return  return
+     * @return return
      */
     public static boolean isEmpty(Object obj) {
         return obj == null || obj.toString().length() == 0 || obj.toString().toLowerCase().equals("null");
@@ -100,11 +99,15 @@ public class Utils {
     /**
      * TODO 获取当前时间戳
      *
-     * @return  return
+     * @return return
      */
     public static String getCurrentDateTime() {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return df.format(new Date());
+    }
+
+    public static String randomHashcode() {
+        return Utils.string2MD5(Math.random() * 100 + "");
     }
 }
 
